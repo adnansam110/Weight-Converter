@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Weight Converter</title>
+    <style>
+        body{
+            margin-top:70px;
+            background: #333;
+            color:white;
+        }
+        .card{
+            height: 80px;;
+        }
+        h4{
+            padding-top: 25px;
+            padding-left: 15px;
+        }
+        #kiloGramsOutput, #OZOutput, #gramsOutput{
+            font-size: medium;
+            color:black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-4 text-center">Weight Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input id="lbsinput" type="number" class="form-control form-control-lg mb-3"
+                        placeholder="Enter Pounds...">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-block">
+                            <h4>Grams: 
+                                <div id="gramsOutput"></div> 
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="card bg-success mb-2">
+                        <div class="card-block">
+                            <h4>KiloGrams: 
+                                <div id="kiloGramsOutput"></div> 
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="card bg-danger mb-2">
+                        <div class="card-block">
+                            <h4>Ounces: 
+                                <div id="OZOutput"></div>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weight.js"></script>
+</body>
+</html>
